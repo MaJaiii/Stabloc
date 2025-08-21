@@ -446,6 +446,7 @@
 "Assets/Scripts/System/TempExtraRules/BlockConnection.cs"
 "Assets/Scripts/System/TempExtraRules/HeightLimitationChallenge.cs"
 "Assets/Scripts/System/TGS/ActionTimer.cs"
+"Assets/Scripts/System/TGS/ScoreSystem.cs"
 "Assets/Scripts/System/Tower/SwayManager.cs"
 "Assets/Scripts/System/Tower/TowerManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

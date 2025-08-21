@@ -6,34 +6,32 @@ public class ActionTimer : MonoBehaviour
 {
     [SerializeField] Image[] overallTimer;
     [SerializeField] Image[] bonusTimer;
-    [SerializeField] TextMeshProUGUI durationText;
     [SerializeField] TextMeshProUGUI blockCountText;
-    [SerializeField] float timer;
+    [SerializeField] public float timer;
     [SerializeField] BlockAction blockAction;
+    [SerializeField] int maxTime;
 
-    float duration = 0;
+    ScoreSystem scoreSystem;
     public int blockCount = 0;
     bool isRecovery = false;
     public bool isGameOver = false;
+    int chain;
 
+    private void Start()
+    {
+        scoreSystem = GetComponent<ScoreSystem>();
+    }
 
     private void Update()
     {
         if (GameStatus.gameState == GAME_STATE.TRANSITIONING) isGameOver = true;
         if (isGameOver) return;
-        if ((blockAction.flagStatus & FlagsStatus.FirstDrop) != FlagsStatus.FirstDrop)
-        {
-            duration += Time.deltaTime;
-            float sec = duration % 60;
-            float min = (sec - sec % 60) / 60;
-            durationText.text = $"{min.ToString("00")}:{sec.ToString("00.000")}";
-        }
         if (isRecovery)
         {
             timer += Time.deltaTime * 15;
-            if (timer > 15) 
+            if (timer > maxTime) 
             { 
-                timer = 15; 
+                timer = maxTime; 
                 isRecovery = false;
             }
         }
@@ -53,8 +51,8 @@ public class ActionTimer : MonoBehaviour
         }
         for (int i = 0; i < 2; i++)
         {
-            overallTimer[i].fillAmount = Mathf.Max(0, Mathf.Min(9, timer)) / 9;
-            bonusTimer[i].fillAmount = Mathf.Max(0, Mathf.Min(15, timer)) / 15;
+            overallTimer[i].fillAmount = Mathf.Max(0, Mathf.Min(6, timer)) / 6;
+            bonusTimer[i].fillAmount = Mathf.Max(0, Mathf.Min(maxTime, timer)) / maxTime;
             bonusTimer[i].color = blockAction.colorHistory[blockAction.colorHistory.Length - 1];
         }
         blockCountText.text = $"{blockCount} blocks placed";
@@ -63,5 +61,16 @@ public class ActionTimer : MonoBehaviour
     public void RecoveryTimer()
     {
         isRecovery = true;
+    }
+
+    public void AddPoint(int score = 0)
+    {
+        if (scoreSystem == null)
+        {
+            Debug.LogError("scoreSystem is not assigned!");
+            return;
+        }
+
+
     }
 }
