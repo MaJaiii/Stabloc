@@ -8,7 +8,7 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] BlockAction blockAction;
     [SerializeField] TextMeshProUGUI nowScore;
     int prevScore;
-    int score;
+    public int score;
     bool isCountUp;
     Sequence sequence;
 
@@ -23,9 +23,10 @@ public class ScoreSystem : MonoBehaviour
         if (isCountUp) nowScore.SetText("{0:000000}", prevScore);
     }
 
-    public void ModifyScore (int gain)
+    public void ModifyScore (int gain, int product = 0)
     {
         prevScore = score;
+        if (product >= 1) gain = Mathf.CeilToInt(score * (product - 1) * .1f);
         score += gain;
         if (isCountUp) sequence.Kill(true);
         CountUpAnim();

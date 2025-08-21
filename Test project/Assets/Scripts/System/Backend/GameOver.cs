@@ -20,6 +20,8 @@ public class GameOver : MonoBehaviour
     BlockAction blockAction;
     [SerializeField]
     ActionTimer actionTimer;
+    [SerializeField]
+    ScoreSystem scoreSystem;
 
     [Header("Canvas")]
     [SerializeField]
@@ -70,8 +72,10 @@ public class GameOver : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > 1)
             {
+                timer = Mathf.NegativeInfinity;
                 actionTimer.isGameOver = true;
                 GameStatus.gameState = GAME_STATE.TRANSITIONING; // Optional: prevent multiple calls
+                scoreSystem.ModifyScore(0, Mathf.CeilToInt(blockAction.height + 3.5f));
                 StartCoroutine(GameOverSequence()); // Run the proper coroutine
                 bgm.SetBool("isPitchDown", true);
             }
@@ -125,8 +129,8 @@ public class GameOver : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // Update texts
-        blockCount.text = $"You have placed {blockAction.placedBlockCount} blocks";
-        height.text = $"It reached a height of {blockAction.height} units";
+        blockCount.text = $"You have placed {actionTimer.blockCount} blocks";
+        height.text = $"It reached a height of {blockAction.height} meters";
 
         // Fade in block count
         yield return StartCoroutine(changeAlpha(blockCount, 1, 0.5f));

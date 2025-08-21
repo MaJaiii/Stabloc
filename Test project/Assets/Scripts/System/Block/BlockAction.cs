@@ -17,6 +17,7 @@ public class BlockAction : MonoBehaviour
     [Header("System")]
     [SerializeField] GameManager gameManager;
     [SerializeField] GameOver gameOver;
+    [SerializeField] Vector2 rotateInput;
 
     [Header("Block Settings")]
     [SerializeField] float dropSpeed;
@@ -383,6 +384,7 @@ public class BlockAction : MonoBehaviour
         }
 
         actionTimer.RecoveryTimer();
+        actionTimer.AddPoint(height + 3.5f);
 
 
 
@@ -484,38 +486,74 @@ public class BlockAction : MonoBehaviour
     {
         if ((flagStatus & FlagsStatus.Collapse) == FlagsStatus.Collapse || (flagStatus & FlagsStatus.PressDownButton) == FlagsStatus.PressDownButton || rotateInputCooldown > 0 || context.ReadValue<Vector2>().magnitude < .5f) return;
 
-        if (Mathf.Abs(context.ReadValue<Vector2>().x) >= .5f)
+        Vector2 readValue = context.ReadValue<Vector2>();
+        rotateInput = readValue;
+        Vector3 axis = Vector3.zero;
+        if (Mathf.Abs(readValue.x) >= .5f && Mathf.Abs(readValue.y) <= .2f) //horizontal
         {
-            float direction = Mathf.Sign(context.ReadValue<Vector2>().x);
-            transform.Rotate(0, 90 * direction, 0);
+            axis.y = 1 ;
         }
-        if (Mathf.Abs(context.ReadValue<Vector2>().y) >= .5f)
+        else if (Mathf.Abs(readValue.x) >= .15f && Mathf.Abs(readValue.y) >= .25f)
         {
-            float direction = Mathf.Sign(context.ReadValue<Vector2>().y);
-            Vector3 rotateAngle = Vector3.zero;
             switch (cameraController.cameraIndex)
             {
                 case 0:
-                    rotateAngle.z = 90 * -direction;
+                    if (Mathf.Sign(readValue.x) == Mathf.Sign(readValue.y)) axis.z = -1; else axis.x = -1;
                     break;
                 case 1:
-                    rotateAngle.x = 90 * direction;
+                    if (Mathf.Sign(readValue.x) == Mathf.Sign(readValue.y)) axis.x = 1; else axis.z = -1;
                     break;
                 case 2:
-                    rotateAngle.z = 90 * direction;
+                    if (Mathf.Sign(readValue.x) == Mathf.Sign(readValue.y)) axis.z = 1; else axis.x = 1;
                     break;
                 case 3:
-                    rotateAngle.x = 90 * -direction;
+                    if (Mathf.Sign(readValue.x) == Mathf.Sign(readValue.y)) axis.x = -1; else axis.z = 1;
                     break;
             }
-            transform.Rotate(rotateAngle);
         }
+        //transform.RotateAround(transform.position, axis, 90 * Mathf.Sign(readValue.x));
         rotateInputCooldown = .2f;
-        ghostSystem?.UpdateGhostPosition();
+        BlockDORotateAround(axis, .2f, Mathf.Sign(readValue.x));
+        //ghostSystem?.UpdateGhostPosition();
+
     }
     #endregion
 
     #region Block Management
+
+    float prevValue;
+    void RotateAroundPrc(float value, Vector3 axis)
+    {
+        float delta = value - prevValue;
+        transform.RotateAround(transform.position, axis, delta);
+        prevValue = value;
+    }
+
+    Tween BlockDORotateAround(Vector3 axis, float duration, float sign)
+    {
+        Tween ret;
+        float endValue = 0;
+        if (Mathf.Abs(axis.x) >= 1)
+        {
+            prevValue = transform.eulerAngles.x;
+            endValue = transform.eulerAngles.x + 90 * sign;
+        }
+        else if (Mathf.Abs(axis.y) >= 1)
+        {
+            prevValue = transform.eulerAngles.y;
+            endValue = transform.eulerAngles.y + 90 * sign;
+        }
+        else if (Mathf.Abs(axis.z) >= 1)
+        {
+            prevValue = transform.eulerAngles.z;
+            endValue = transform.eulerAngles.z + 90 * sign;
+        }
+        else return null;
+        //axis = new Vector3(Mathf.Abs(axis.x), Mathf.Abs(axis.y), Mathf.Abs(axis.z));
+        ret = DOTween.To(x => RotateAroundPrc(x, axis), prevValue, endValue, .2f).OnComplete(() => ghostSystem?.UpdateGhostPosition());
+
+        return ret;
+    }
 
     public void TowerCollapse()
     {
