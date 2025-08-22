@@ -7,6 +7,8 @@ public class BlockFade : MonoBehaviour
 
     [SerializeField]
     MeshRenderer coreRenderer;
+    [SerializeField]
+    Vector3 worldPos;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +19,7 @@ public class BlockFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        worldPos = this.transform.position;
     }
 
     public void StartChangeAlpha(float alpha)

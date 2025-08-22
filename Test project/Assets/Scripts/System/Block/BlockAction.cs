@@ -62,6 +62,7 @@ public class BlockAction : MonoBehaviour
     List<float> nowAngle = new();
     List<Color> PentacubeColors = new() {
         Color.white,
+        Color.red,
         Color.green,
         Color.yellow,
         Color.magenta,
@@ -230,7 +231,6 @@ public class BlockAction : MonoBehaviour
         {
             if ((flagStatus & FlagsStatus.Move) == FlagsStatus.Move)
             {
-
                 flagStatus &= ~FlagsStatus.Move;
             }
             if ((flagStatus & FlagsStatus.Rotate) == FlagsStatus.Rotate)
@@ -241,6 +241,7 @@ public class BlockAction : MonoBehaviour
             {
                 flagStatus &= ~FlagsStatus.GenerateBlock;
             }
+
         }
 
     }
@@ -466,13 +467,13 @@ public class BlockAction : MonoBehaviour
         moveInputCooldown = .1f;
 
         transform.position = moveInput;
-
         // Manually preview ghost at the new position
         if (ghostSystem != null && ghostSystem.pivotObj != null)
         {
             ghostSystem.pivotObj.position = moveInput;
             ghostSystem.UpdateGhostPosition();
         }
+
     }
 
     void OnDrop(InputAction.CallbackContext context)
@@ -550,7 +551,6 @@ public class BlockAction : MonoBehaviour
             endValue = transform.eulerAngles.z + 90 * sign;
         }
         else return null;
-        //axis = new Vector3(Mathf.Abs(axis.x), Mathf.Abs(axis.y), Mathf.Abs(axis.z));
         ret = DOTween.To(x => RotateAroundPrc(x, axis), prevValue, endValue, .2f).OnComplete(() => ghostSystem?.UpdateGhostPosition());
 
         return ret;
@@ -622,7 +622,7 @@ public class BlockAction : MonoBehaviour
             placedBlockCount = blockCount;
             blockCount++;
             colorCount = (colorCount + 1) % PentacubeColors.Count;
-            if (colorCount == 0) colorCount++;
+            if (colorCount <= 1) colorCount = 2;
 
             bool isHistoryIncluded = true;
 
