@@ -23,11 +23,18 @@ public class ScoreSystem : MonoBehaviour
         if (isCountUp) nowScore.SetText("{0:000000}", prevScore);
     }
 
-    public void ModifyScore (int gain, int product = 0)
+    public void ModifyScore (int gain)
     {
         prevScore = score;
-        if (product >= 1) gain = Mathf.CeilToInt(score * (product - 1) * .1f);
         score += gain;
+        if (isCountUp) sequence.Kill(true);
+        CountUpAnim();
+    }
+
+    public void ProductScore (float product)
+    {
+        prevScore = score;
+        score = Mathf.CeilToInt(prevScore * product);
         if (isCountUp) sequence.Kill(true);
         CountUpAnim();
     }

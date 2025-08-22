@@ -160,8 +160,8 @@ public class BlockAction : MonoBehaviour
         {
             if (audioSource.time / audioSource.clip.length >= .9)
             {
-                audioSource.clip = null;
                 audioSource.time = 0;
+                audioSource.clip = null;
             }
         }
         if (pivotObj)
@@ -213,8 +213,9 @@ public class BlockAction : MonoBehaviour
                 else
                 {
                     rb.DOMoveY(rb.position.y - 3, .05f).SetEase(Ease.InSine);
+                    Vector3 ghostPos = ghostSystem.ghostBlock.position;
                     yield return new WaitForSeconds(.05f);
-                    rb.position = ghostSystem.ghostBlock.position + Vector3.up * .51f;
+                    rb.position = ghostPos + Vector3.up * .51f;
                 }
 
                 flagStatus |= FlagsStatus.PressDownButton;

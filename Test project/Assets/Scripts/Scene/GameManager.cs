@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -28,6 +29,25 @@ public class GameManager : MonoBehaviour
         QualitySettings.vSyncCount = 0;
     }
 
+    private void OnApplicationQuit()
+    {
+        foreach (var pad in Gamepad.all)
+        {
+            pad.SetMotorSpeeds(0, 0);
+            pad.ResetHaptics();   // Stops vibration
+        }
+            
+    }
+
+    private void OnDisable()
+    {
+        // Extra safety (in case scripts reload, playmode stops, etc.)
+        foreach (var pad in Gamepad.all)
+        {
+            pad.SetMotorSpeeds(0, 0);
+            pad.ResetHaptics();   // Stops vibration
+        }
+    }
     private void Start()
     {
         GameStatus.gameState = GAME_STATE.GAME_TITLE;

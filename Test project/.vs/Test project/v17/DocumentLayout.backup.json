@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\tgs\\actiontimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\tgs\\actiontimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\tgs\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\tgs\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\block\\blockaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\block\\blockaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\tgs\\actiontimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\tgs\\actiontimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\scene\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BlockAction.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Block\\BlockAction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Block\\BlockAction.cs",
               "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Block\\BlockAction.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\Block\\BlockAction.cs",
-              "ViewState": "AgIAAN8CAAAAAAAAAAAgwOABAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAOUCAAAAAAAAAAAgwOABAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T02:01:51.624Z",
               "IsPinned": true,
@@ -52,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameOver.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Backend\\GameOver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Backend\\GameOver.cs",
               "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Backend\\GameOver.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\Backend\\GameOver.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAIwEsAAABkAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwE8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T08:46:31.835Z",
               "EditorCaption": ""
@@ -91,13 +91,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ActionTimer.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TGS\\ActionTimer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TGS\\ActionTimer.cs",
               "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TGS\\ActionTimer.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\TGS\\ActionTimer.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvxwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwBwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T02:41:33.089Z",
               "EditorCaption": ""
@@ -110,7 +110,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TGS\\ScoreSystem.cs",
               "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TGS\\ScoreSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\TGS\\ScoreSystem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxwAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T02:31:45.838Z",
               "EditorCaption": ""

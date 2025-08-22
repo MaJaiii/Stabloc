@@ -21,7 +21,7 @@ public class ActionTimer : MonoBehaviour
     private void Start()
     {
         scoreSystem = GetComponent<ScoreSystem>();
-        Gamepad.current.SetMotorSpeeds(0, 0);
+        Gamepad.current?.SetMotorSpeeds(0, 0);
     }
 
     private void Update()
@@ -84,10 +84,10 @@ public class ActionTimer : MonoBehaviour
         int gainScore = 0;
         if (score <= 0)
         {
-            int timeScore = (int)Mathf.Ceil((timer) * 10);
+            int timeScore = (int)Mathf.Ceil((timer) * 5);
             int heightScore = (int)Mathf.Ceil((height) * 2);
             if (timeScore == 0) heightScore = 0;
-            int chainScore = (int)Mathf.Ceil((timeScore + heightScore) * 0.3f * (chain + 1));
+            int chainScore = (int)Mathf.Ceil((timeScore + heightScore) * 0.25f * (chain + 1));
 
             gainScore = timeScore + heightScore + chainScore;
         }

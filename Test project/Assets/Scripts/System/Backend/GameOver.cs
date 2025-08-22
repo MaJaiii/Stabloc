@@ -75,7 +75,7 @@ public class GameOver : MonoBehaviour
                 timer = Mathf.NegativeInfinity;
                 actionTimer.isGameOver = true;
                 GameStatus.gameState = GAME_STATE.TRANSITIONING; // Optional: prevent multiple calls
-                scoreSystem.ModifyScore(0, Mathf.CeilToInt(blockAction.height + 3.5f));
+                scoreSystem.ProductScore(Mathf.CeilToInt((blockAction.height + 1) * .9f + (actionTimer.blockCount) * .1f));
                 StartCoroutine(GameOverSequence()); // Run the proper coroutine
                 bgm.SetBool("isPitchDown", true);
             }
@@ -83,7 +83,8 @@ public class GameOver : MonoBehaviour
 
         if (GameStatus.gameState == GAME_STATE.GAME_OVER)
         {
-            InputSystem.onAnyButtonPress.CallOnce( ctrl =>           {
+            InputSystem.onAnyButtonPress.CallOnce( ctrl =>           
+            {
                 if (!isPressed)
                 {
                     isPressed = true;
