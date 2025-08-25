@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Unity 6000.0.25f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\System\TempExtraRules\CheckCore.cs" />
     <Compile Include="Assets\Scripts\System\TempExtraRules\BlockColor.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -96,7 +97,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\System\TempExtraRules\HeightLimitationChallenge.cs" />
     <Compile Include="Assets\Scripts\System\Block\BlockFade.cs" />
-    <Compile Include="Assets\Scripts\System\TempExtraRules\AngleCalculator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />

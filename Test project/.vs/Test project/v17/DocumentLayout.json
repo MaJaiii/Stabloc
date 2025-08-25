@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\block\\ghostblockpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\tempextrarules\\checkcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\tempextrarules\\checkcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\block\\ghostblockpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\block\\ghostblockpreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\block\\blockfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\block\\blockaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\block\\blockaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\block\\blockfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\block\\blockfade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\tempextrarules\\blockcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\tempextrarules\\blockcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|c:\\users\\elvis\\documents\\stabloc\\test project\\assets\\scripts\\system\\block\\blockaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\block\\blockaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\system\\backend\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6600AD1-470B-D032-6CD3-E8C4D7A734BB}|Assembly-CSharp.csproj|C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\assets\\scripts\\scene\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -52,7 +56,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Block\\BlockAction.cs",
               "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Block\\BlockAction.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\Block\\BlockAction.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAawCgCAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAOkCAAAAAAAAAAAmwCgCAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-21T02:01:51.624Z",
               "IsPinned": true,
@@ -60,7 +64,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "CheckCore.cs",
+              "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TempExtraRules\\CheckCore.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TempExtraRules\\CheckCore.cs",
+              "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TempExtraRules\\CheckCore.cs",
+              "RelativeToolTip": "Assets\\Scripts\\System\\TempExtraRules\\CheckCore.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAmwFcAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T07:14:25.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BlockFade.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Block\\BlockFade.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Block\\BlockFade.cs",
@@ -68,25 +85,24 @@
               "RelativeToolTip": "Assets\\Scripts\\System\\Block\\BlockFade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T06:49:55.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T06:49:55.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GhostBlockPreview.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Block\\GhostBlockPreview.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Block\\GhostBlockPreview.cs",
               "ToolTip": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Block\\GhostBlockPreview.cs",
               "RelativeToolTip": "Assets\\Scripts\\System\\Block\\GhostBlockPreview.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAIwJsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwLcAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-22T05:17:18.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "GameOver.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\Backend\\GameOver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\Backend\\GameOver.cs",
@@ -94,11 +110,12 @@
               "RelativeToolTip": "Assets\\Scripts\\System\\Backend\\GameOver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T08:46:31.835Z"
+              "WhenOpened": "2025-08-21T08:46:31.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\Scene\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene\\GameManager.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BlockColor.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TempExtraRules\\BlockColor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TempExtraRules\\BlockColor.cs",
@@ -118,12 +135,11 @@
               "RelativeToolTip": "Assets\\Scripts\\System\\TempExtraRules\\BlockColor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T08:19:03.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T08:19:03.607Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ActionTimer.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TGS\\ActionTimer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TGS\\ActionTimer.cs",
@@ -135,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ScoreSystem.cs",
               "DocumentMoniker": "C:\\Users\\elvis\\Documents\\Stabloc\\Test project\\Assets\\Scripts\\System\\TGS\\ScoreSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\System\\TGS\\ScoreSystem.cs",
